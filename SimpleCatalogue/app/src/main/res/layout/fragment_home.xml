@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/home"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/orange"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/carImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="75dp"
+            android:src="@drawable/car"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home" />
+
+        <ImageView
+            android:id="@+id/bookImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/book"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home" />
+
+        <TextView
+            android:id="@+id/carText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="@string/cars"
+            app:layout_constraintEnd_toEndOf="@+id/carImage"
+            app:layout_constraintStart_toStartOf="@+id/carImage"
+            app:layout_constraintTop_toBottomOf="@+id/carImage" />
+
+        <TextView
+            android:id="@+id/bookText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="@string/books"
+            app:layout_constraintEnd_toEndOf="@+id/bookImage"
+            app:layout_constraintStart_toStartOf="@+id/bookImage"
+            app:layout_constraintTop_toBottomOf="@+id/bookImage" />
+
+        <ImageView
+            android:id="@+id/movieImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/movie"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carText" />
+
+        <ImageView
+            android:id="@+id/addImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bookText" />
+
+        <TextView
+            android:id="@+id/movieText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="@string/movies"
+            app:layout_constraintEnd_toEndOf="@+id/movieImage"
+            app:layout_constraintStart_toStartOf="@+id/movieImage"
+            app:layout_constraintTop_toBottomOf="@+id/movieImage" />
+
+        <TextView
+            android:id="@+id/addText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="@string/add"
+            app:layout_constraintEnd_toEndOf="@+id/addImage"
+            app:layout_constraintStart_toStartOf="@+id/addImage"
+            app:layout_constraintTop_toBottomOf="@+id/addImage" />
+
+        <View
+            android:id="@+id/carsView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/carText"
+            app:layout_constraintEnd_toEndOf="@+id/carImage"
+            app:layout_constraintStart_toStartOf="@+id/carImage"
+            app:layout_constraintTop_toTopOf="@+id/carImage" />
+
+        <View
+            android:id="@+id/booksView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/bookText"
+            app:layout_constraintEnd_toEndOf="@+id/bookImage"
+            app:layout_constraintStart_toStartOf="@+id/bookImage"
+            app:layout_constraintTop_toTopOf="@+id/bookImage" />
+
+        <View
+            android:id="@+id/moviesView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/movieText"
+            app:layout_constraintEnd_toEndOf="@+id/movieImage"
+            app:layout_constraintStart_toStartOf="@+id/movieImage"
+            app:layout_constraintTop_toTopOf="@+id/movieImage" />
+
+        <View
+            android:id="@+id/addNewView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/addText"
+            app:layout_constraintEnd_toEndOf="@+id/addImage"
+            app:layout_constraintStart_toStartOf="@+id/addImage"
+            app:layout_constraintTop_toTopOf="@+id/addImage" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

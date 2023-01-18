@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "379710498110",
+    "project_id": "simplecatalogue",
+    "storage_bucket": "simplecatalogue.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379710498110:android:8812c7a4e691cea637786f",
+        "android_client_info": {
+          "package_name": "hr.ferit.lukajukic.simplecatalogue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "379710498110-cp7bbih2gbt2o6egq9qukolcigqcdjc0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr9ElwSxcUnY90yPLUiO-ZoGhYYn9HuNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "379710498110-cp7bbih2gbt2o6egq9qukolcigqcdjc0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
