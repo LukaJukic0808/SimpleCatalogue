@@ -1,2 +1,2 @@
-# Project for faculty purposes
-## Private because of API keys
+# Simple Catalogue
+## Android application created as a project for Basics of Android applications course (Kotlin)
